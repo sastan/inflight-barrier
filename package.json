@@ -1,0 +1,66 @@
+{
+  "name": "inflight-barrier",
+  "version": "1.0.0",
+  "description": "One promise for multiple tasks in flight to avoid async duplication",
+  "keywords": [
+    "async",
+    "await",
+    "barrier",
+    "cache",
+    "concurrency",
+    "concurrent",
+    "concurrently",
+    "job",
+    "limit",
+    "limited",
+    "operation",
+    "parallel",
+    "promise",
+    "promises",
+    "queue",
+    "task"
+  ],
+  "homepage": "https://github.com/sastan/inflight-barrier#readme",
+  "repository": "github:sastan/inflight-barrier",
+  "license": "MIT",
+  "author": "Sascha Tandel (https://github.com/sastan)",
+  "main": "src/inflight-barrier.ts",
+  "side-effects": false,
+  "scripts": {
+    "build": "nps build",
+    "format": "nps format",
+    "prepublishOnly": "echo 'Use `npm start release` instead of `npm publish`!' && exit 1",
+    "release": "nps release",
+    "start": "nps",
+    "test": "nps test",
+    "preversion": "nps test",
+    "postversion": "nps release"
+  },
+  "prettier": "@carv/prettier-config",
+  "eslintConfig": {
+    "extends": "@carv/eslint-config",
+    "root": true
+  },
+  "jest": {
+    "preset": "@carv/snowpack-scripts"
+  },
+  "devDependencies": {
+    "@carv/eslint-config": "^1.2.5",
+    "@carv/prettier-config": "^1.0.2",
+    "@carv/snowpack-scripts": "^1.4.0",
+    "doctoc": "^1.4.0",
+    "envinfo": "^7.5.1",
+    "eslint": "^7.4.0",
+    "jest": "^26.1.0",
+    "nps": "^5.9.12",
+    "prettier": "^2.0.5",
+    "snowpack": "^2.5.0",
+    "typescript": "^3.9.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "snowpack": {
+    "extends": "@carv/snowpack-scripts"
+  }
+}
